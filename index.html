@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Özəllikli Image Slider + İdarə Paneli</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <h2>Dinamik Image Slider və İdarə Paneli</h2>
+
+  <input type="file" id="fileInput" multiple accept="image/*" />
+  <button id="resetBtn">Sıfırla</button>
+
+  <div class="slider" id="slider">
+    <div class="slides"></div>
+
+    <button class="prev" aria-label="Əvvəlki şəkil">&#10094;</button>
+    <button class="next" aria-label="Sonrakı şəkil">&#10095;</button>
+
+    <div class="dots"></div>
+  </div>
+
+  <div class="controls">
+    <h3>Slider Özəllikləri</h3>
+
+    <label>
+      Avtomatik keçid:
+      <input type="checkbox" id="autoPlay" checked />
+    </label>
+
+    <label>
+      Keçid intervalı (saniyə):
+      <input type="number" id="intervalInput" value="4" min="1" max="20" />
+    </label>
+
+    <label>
+      Nöqtələri göstər:
+      <input type="checkbox" id="dotsToggle" checked />
+    </label>
+
+    <label>
+      Ön / Son düymələr:
+      <input type="checkbox" id="navToggle" checked />
+    </label>
+
+    <label>
+      Keçid animasiyası sürəti (ms):
+      <input type="number" id="speedInput" value="500" min="100" max="3000" />
+    </label>
+
+    <label>
+      Slayder genişliyi (px):
+      <input type="number" id="widthInput" value="600" min="300" max="1200" />
+    </label>
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
